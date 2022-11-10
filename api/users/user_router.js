@@ -16,6 +16,8 @@ router.put('/update_user', token_validation, update_user);
 //delete user data in database
 router.delete('/user_delete', token_validation, delete_user);
 
+
+
 router.get('*', (req, res) => {
     res.json({
         status: 404,
